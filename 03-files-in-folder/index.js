@@ -13,7 +13,7 @@ fsPromises.readdir((path.join(__dirname, 'secret-folder')), {
         .stat(filePath)
         .then(infoFile => {
           let result = fileName.split('.').join(' - ');
-          console.log(`${result} - ${infoFile.size}`);
+          console.log(`${result} - ${infoFile.size}b`);
         });
     }
   });
